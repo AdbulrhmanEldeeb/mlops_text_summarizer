@@ -16,8 +16,8 @@ jobs:
       - name: Add remote 
         env:
           HF: ${{ secrets.HG }}
-        run: git remote add space https://noahgift:$HF@huggingface.co/spaces/noahgift/demo
+        run: git remote add space https://huggingface.co/spaces/Abdulrhman37/mlops_text_summarizer
       - name: Push to hub
         env:
           HF: ${{ secrets.HG }}
-        run: git push --force https://huggingface.co/spaces/Abdulrhman37/mlops_text_summarizer master
+        run: git push --force https://huggingface.co/spaces/Abdulrhman37/mlops_text_summarizer main
