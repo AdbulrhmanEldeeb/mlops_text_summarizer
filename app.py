@@ -4,9 +4,11 @@ from transformers import pipeline
 # Load the summarization pipeline
 summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
 
-# Define the summarization function
-def summarize_text(article[:1024]):
-    summary = summarizer(article, max_length=130, min_length=30, do_sample=False)
+# Define the summarization function with truncation
+def summarize_text(article):
+    # Truncate the input to 1024 tokens
+    truncated_article = article[:1024]
+    summary = summarizer(truncated_article, max_length=130, min_length=30, do_sample=False)
     return summary[0]['summary_text']
 
 # Create the Gradio interface
