@@ -1,5 +1,5 @@
 ---
-title: My Hugging Face Space  # Replace this with the name of your Space
+title: First Mlops Project  # Replace this with the name of your Space
 emoji: 🚀                     # Choose an emoji for your project
 colorFrom: blue               # Starting gradient color for the card
 colorTo: green                # Ending gradient color for the card
